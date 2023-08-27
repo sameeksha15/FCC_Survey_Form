@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet"> 
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div>
+        <header id="title-box">
+            <h1 id="title" style=" color: #e53265;">PRODUCT SURVEY FORM</h1>
+
+        </header>
+
+        <p style="text-align: center; margin: 3% 2%; font-family: 'Cinzel', serif;" id="description"><b>Thank you for taking time to provide feedback. We appreciate hearing from you and will review your comments carefully.</b></p>
+    </div>
+    
+    <br>
+
+    <form id="survey-form" class="background">
+        <fieldset>
+            <h2 class="section-header" style="text-align: center; font-family: 'Cinzel', serif;">CUSTOMER INFORMATION</h2>
+
+            <h3 style="font-family: 'Cinzel', serif;"><b>Customer Name</b></h3>
+            <label id="name-label" for="name">Name: <input type="text" name="name" id="name" class="display" placeholder="Enter your name" required /></label>
+            <label id="number-label">Age: <input type="number" class="display" id="number" name="age" min="13" max="120" placeholder="Enter your age (in years)" required /></label>
+
+            <br>
+
+            <h3 style="font-family: 'Cinzel', serif;"><b>Address</b></h3>
+            <label id="address-label">Street Address: <input type="text" name="name" id="address" class="display" required /></label>
+            <label id="address-label">Street Address Line 2: <input type="text" name="name" id="address" class="display" required /></label>
+            <label id="address-label">City: <input type="text" name="name" id="address" class="display" required /></label>
+            <label id="address-label">State: <input type="text" name="name" id="address" class="display" required /></label>
+
+            <br>
+
+            <h3 style="font-family: 'Cinzel', serif;">
+              <label id="email-label"><b>E-MAIL ID</b></h3>
+            <input type="email" class="display" name="email" id="email" placeholder="Enter a valid E-mail ID" required /></label>
+        </fieldset>
+
+        <fieldset>
+            <h2 class="section-header" style="text-align: center; font-family: 'Cinzel', serif;">PRODUCT REVIEW</h2>
+
+            <label><strong>Which product would you like to review:</strong>  
+                <select class="display" style="border-radius: 0.25rem;" id="dropdown">
+                    <option value="">(Select one)</option>
+                    <option value="1">Product A</option>
+                    <option value="2">Product B</option>
+                    <option value="3">Product C</option>
+                    <option value="3">Product D</option>
+                </select>
+            </label>
+
+            <hr>
+
+            <label>
+                <p><strong>Do you like our products? </strong></p><input type="radio" name="product-preference" value="yes" class="inline" />Yes
+            </label>
+            <label>
+                <input type="radio" name="product-preference" value="No" class="inline" />No
+            </label>
+
+            <hr>
+
+            <label>
+                <p><strong>What was your overall experience with our products when you first used it?  </strong></p>
+                <input type="radio" name="satisfaction" value="very_satisfied" class="inline" />Very Satisfied
+            </label>
+            <label>
+                <input type="radio" name="satisfaction" value="satisfied" class="inline" />Satisfied
+            </label>
+            <label>
+                <input type="radio" name="satisfaction" value="neutral" class="inline" />Neutral
+            </label>
+            <label>
+                <input type="radio" name="satisfaction" value="dissatisfied" class="inline" />Dissatisfied
+            </label>
+            <label>
+                <input type="radio" name="satisfaction" value="very_dissatisfied" class="inline" />Very Dissatisfied
+            </label>
+
+            <hr>
+
+            <label><p><strong>How long have you used our products? : </strong></p>
+                <input type="radio" name="product_usage" value="more_than_6_months" class="inline" />6 Months or more
+            </label>
+            <label>
+                <input type="radio" name="product_usage" value="1-6" class="inline" />One to six months
+            </label>
+            <label>
+                <input type="radio" name="product_usage" value="less_than_1" class="inline" />Less than one month
+            </label>
+
+            <hr>
+
+            <label>
+                <p><strong>Would you recommend our products to your friends? </strong></p>
+                <input type="radio" name="recommendation" value="yes" class="inline" />Yes
+            </label>
+            <label>
+                <input type="radio" name="recommendation" value="no" class="inline" />No
+            </label>
+
+            <hr>
+
+        <fieldset>
+            <label>
+                <strong> What important features are our products missing?  </strong><textarea name="missing_features" rows="10" cols="30" style="resize: vertical;"></textarea>
+            </label>
+
+            <hr>
+
+            <label>
+                <strong>Have you had any problems with our product? Can you specify? </strong><textarea name="problems" rows="10" cols="30" style="resize: vertical;"></textarea>
+            </label>
+
+            <hr>
+
+            <label>
+                <strong> If you could change something about our products, firstly what would it be? </strong><textarea name="changes" rows="10" cols="30" style="resize: vertical;"></textarea>
+            </label>
+
+            <br>
+
+            <label><input type="checkbox" id="usage" name="usage" value="used_product" class="inline" required /> I have used the above product at least once and the review is genuine.</a></label>
+            <label><input type="checkbox" id="terms_conditions" name="terms_conditions" value="terms_and_conditions" class="inline" required /> I agree the <a href="#">terms and conditions</a></label>
+
+
+            <button type="submit" id="submit" class="submit-button">
+                <b>Submit</b>
+            </button>
+        </fieldset>
+    </form>
+
+    <br>
+</body>
